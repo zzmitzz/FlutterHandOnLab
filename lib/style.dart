@@ -34,4 +34,10 @@ class AppColor extends Color {
 
   static const cloudColorDark = Color(0xFF2E3139);
   static const cloudColorLight = Color(0xFFAEAEAE);
+
+  // Palette 1
+  static const colorBackground = Color(0xFF168aff);
+  static const colorOnBackground = Colors.white;
+  static const colorSecondOnBackground = Color(0xFFFBDA58);
+  static const colorHighLight = Color(0xFF5E97F8);
 }
