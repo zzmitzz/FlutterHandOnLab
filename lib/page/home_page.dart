@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter1/widget/home_ui_utils/top_components.dart';
 
 import '../utils/page_routes.dart';
+import '../widget/home_ui_utils/home_components.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -16,7 +17,8 @@ class HomePage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                TopHomeScreen("Ha Noi", "Monday, 1 January 10:00")
+                TopHomeScreen("Ha Noi", "Monday, 1 January 10:00"),
+                TemperatureCircleCard()
               ],
             )
           ],
