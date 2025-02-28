@@ -50,33 +50,51 @@ class WelcomeScreen extends StatelessWidget {
                       color: AppColor.colorSecondOnBackground,
                     ),
                   ),
-                  Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 12,
-                      decoration: TextDecoration.none,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.white70
-                  )),
-                  Padding(padding: EdgeInsets.all(20)),
-                  ElevatedButton(onPressed: () => {
-                    Navigator.pushNamed(context, AppRoute.homePage)
-                  } ,style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.yellow, // Background color
-                    foregroundColor: AppColor.colorHighLight, // Text color
-                    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15), // Padding
-                    textStyle: const TextStyle(fontSize: 20), // Text style
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30), // Rounded corners
+                  Container(
+                    width: 300,
+                    child: Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 12,
+                        decoration: TextDecoration.none,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.white70,
+                      ),
                     ),
-                  ), child: Text("Get Start",style: TextStyle(fontWeight: FontWeight.bold),),)
+                  ),
+                  Padding(padding: EdgeInsets.all(20)),
+                  ElevatedButton(
+                    onPressed:
+                        () => {Navigator.pushNamed(context, AppRoute.homePage)},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.yellow,
+                      // Background color
+                      foregroundColor: AppColor.colorHighLight,
+                      // Text color
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 30,
+                        vertical: 15,
+                      ),
+                      // Padding
+                      textStyle: const TextStyle(fontSize: 20),
+                      // Text style
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(
+                          30,
+                        ), // Rounded corners
+                      ),
+                    ),
+                    child: Text(
+                      "Get Start",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ),
                 ],
               ),
-
             ],
           ),
-        )
+        ),
       ],
     );
   }
